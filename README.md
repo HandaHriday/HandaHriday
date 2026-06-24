@@ -33,12 +33,10 @@ class Hriday:
 
 <div align="center">
 
-<a href="https://olozen.com">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=HandaHriday&repo=olozen&theme=react&hide_border=true&bg_color=0d1117&title_color=4169E1&icon_color=4169E1" alt="olozen" />
-</a>
+<a href="https://olozen.com"><img src="https://img.shields.io/badge/🌐_Olozen-Live_AI_Chatbot-4169E1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="olozen" height="38" /></a>
 
-**[🌐 Olozen — live AI chatbot at olozen.com](https://olozen.com)**
-Flask · PostgreSQL · OAuth · PWA
+A web-based AI chatbot with multi-chat, OAuth login, and PWA support.
+**Flask · PostgreSQL · OAuth · PWA** — live at **[olozen.com](https://olozen.com)**
 
 </div>
 
