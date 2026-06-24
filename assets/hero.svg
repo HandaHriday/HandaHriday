@@ -1,0 +1,65 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0a1730"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="50%" stop-color="#8db0ff"/>
+      <stop offset="100%" stop-color="#4169E1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1d3a7a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0 L0 0 0 34" fill="none" stroke="#15233f" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="300" rx="18" fill="url(#grid)" opacity="0.6"/>
+  <rect width="900" height="300" rx="18" fill="url(#glow)"/>
+
+  <!-- floating particles -->
+  <g fill="#4169E1">
+    <circle cx="80" cy="70" r="2.5"><animate attributeName="cy" values="70;58;70" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;1;0.3" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="835" cy="220" r="3"><animate attributeName="cy" values="220;232;220" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;1;0.3" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="60" r="2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="60" cy="230" r="2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- left: terminal card -->
+  <g transform="translate(60,90)">
+    <rect width="360" height="150" rx="10" fill="#0d1424" stroke="#1d2b4a" stroke-width="1.5"/>
+    <circle cx="22" cy="22" r="5" fill="#ff5f56"/>
+    <circle cx="40" cy="22" r="5" fill="#ffbd2e"/>
+    <circle cx="58" cy="22" r="5" fill="#27c93f"/>
+    <text x="20" y="62" font-family="'Fira Code',monospace" font-size="14" fill="#5b7cc4">$ <tspan fill="#8db0ff">whoami</tspan></text>
+    <text x="20" y="88" font-family="'Fira Code',monospace" font-size="13" fill="#c9d4ec">CS student @ UTS, Sydney</text>
+    <text x="20" y="110" font-family="'Fira Code',monospace" font-size="13" fill="#c9d4ec">AI · Data Science · Web</text>
+    <text x="20" y="132" font-family="'Fira Code',monospace" font-size="13" fill="#5b7cc4">$ <tspan fill="#27c93f">building</tspan> --always<tspan fill="#4169E1">_</tspan>
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- right: name + tagline -->
+  <g transform="translate(460,0)">
+    <text x="0" y="120" font-size="46" font-weight="800" fill="url(#accent)" letter-spacing="1">Hriday Handa</text>
+    <rect x="2" y="135" width="0" height="4" rx="2" fill="url(#accent)">
+      <animate attributeName="width" values="0;330" dur="1.2s" fill="freeze"/>
+    </rect>
+    <text x="2" y="172" font-family="'Fira Code',monospace" font-size="15" fill="#9db0d6">I build things that ship.</text>
+
+    <!-- cycling roles -->
+    <text x="2" y="205" font-family="'Fira Code',monospace" font-size="15" fill="#4169E1">&gt; </text>
+    <g font-family="'Fira Code',monospace" font-size="15" fill="#dbe4f7" transform="translate(22,205)">
+      <text x="0" y="0">AI &amp; machine learning<animate attributeName="opacity" values="1;1;0;0;0;0;1" dur="9s" repeatCount="indefinite"/></text>
+      <text x="0" y="0">data science<animate attributeName="opacity" values="0;0;1;1;0;0;0" dur="9s" repeatCount="indefinite"/></text>
+      <text x="0" y="0">full-stack web apps<animate attributeName="opacity" values="0;0;0;0;1;1;0" dur="9s" repeatCount="indefinite"/></text>
+    </g>
+  </g>
+</svg>
